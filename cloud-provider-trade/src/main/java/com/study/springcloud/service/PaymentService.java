@@ -1,5 +1,8 @@
 package com.study.springcloud.service;
 
+
+import com.study.springcloud.entities.Payment;
+
 /**
  * @author yangyanbin
  * @since 20230413

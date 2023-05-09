@@ -9,13 +9,12 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>cloud-provider-payment</artifactId>
+    <artifactId>cloud-provider-trade</artifactId>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
     </properties>
-
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -32,6 +31,7 @@
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>druid-spring-boot-starter</artifactId>
+            <version>1.1.10</version>
         </dependency>
         <!--mysql-connector-java-->
         <dependency>
@@ -63,6 +63,14 @@
             <groupId>com.study.springcloud</groupId>
             <artifactId>cloud-api-commons</artifactId>
         </dependency>
+        <!--EurekaClient端cloud-provider-trade
+        将注册进EurekaServer成为服务提供者provider，类似尚硅谷学校对外提供授课服务-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+        </dependency>
+
+
     </dependencies>
 
 </project>

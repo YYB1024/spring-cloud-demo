@@ -1,6 +1,8 @@
 package com.study.springcloud.controller;
 
 
+import com.study.springcloud.entities.CommonResult;
+import com.study.springcloud.entities.Payment;
 import com.study.springcloud.service.PaymentService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
@@ -8,25 +10,24 @@ import org.springframework.web.bind.annotation.*;
 import javax.annotation.Resource;
 
 /**
- * @author yangyanbin
- * @since 20230413
- **/
+ * @author yangyb
+ */
 @RestController
 @Slf4j
-public class PayMentController {
+public class PaymentController {
 
     @Resource
     private PaymentService paymentService;
 
     @PostMapping("/payment/create")
     public CommonResult create(@RequestBody Payment payment){
-       int result =  paymentService.create(payment);
-       log.info("插入结果："+result);
-       if(result > 0){
-           return new CommonResult(200,"插入结果成功",result);
-       }else {
-           return new CommonResult(444,"插入结果失败",null);
-       }
+        int result =  paymentService.create(payment);
+        log.info("插入结果："+result);
+        if(result > 0){
+            return new CommonResult(200,"插入结果成功",result);
+        }else {
+            return new CommonResult(444,"插入结果失败",null);
+        }
     }
 
     @GetMapping("/payment/getPaymentById/{id}")

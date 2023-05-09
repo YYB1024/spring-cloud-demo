@@ -8,6 +8,24 @@
 				}
 			],
 			"name":"cloud-provider-payment"
+		},
+		{
+			"hostGroup":[
+				{
+					"env":"local",
+					"url":"http://localhost:8001"
+				}
+			],
+			"name":"cloud-provider-trade"
+		},
+		{
+			"hostGroup":[
+				{
+					"env":"local",
+					"url":"http://localhost:80"
+				}
+			],
+			"name":"cloud-consumer-order"
 		}
 	],
 	"envList":[
@@ -17,7 +35,9 @@
 	"postScript":"",
 	"preScript":"",
 	"projectList":[
-		"cloud-provider-payment"
+		"cloud-provider-payment",
+		"cloud-provider-trade",
+		"cloud-consumer-order"
 	],
 	"syncModel":{
 		"branch":"master",
