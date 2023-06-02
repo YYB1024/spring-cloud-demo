@@ -1,0 +1,10 @@
+server:
+  port: 8004
+
+spring:
+  application:
+    name: cloud-zookeeper-provider
+  cloud:
+    zookeeper:
+      # zookeeper服务地址ip:端口
+      connect-string: 39.101.165.196:2181
