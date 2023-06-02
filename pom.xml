@@ -10,10 +10,11 @@
     <modules>
         <module>cloud-consumer-order</module>
         <module>cloud-api-commons</module>
-        <module>cloud-provider-trade</module>
+        <module>cloud-eureka-provider</module>
+        <module>cloud-eureka-provider2</module>
         <module>cloud-eureka-server</module>
         <module>cloud-eureka-server2</module>
-        <module>cloud-provider-trade2</module>
+        <module>cloud-zookeeper-provider</module>
     </modules>
     <packaging>pom</packaging>
 

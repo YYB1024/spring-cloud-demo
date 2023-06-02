@@ -9,7 +9,8 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>cloud-provider-trade</artifactId>
+
+    <artifactId>cloud-eureka-provider</artifactId>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
