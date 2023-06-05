@@ -26,6 +26,15 @@
 				}
 			],
 			"name":"cloud-consumer-order"
+		},
+		{
+			"hostGroup":[
+				{
+					"env":"local",
+					"url":"http://localhost:8004"
+				}
+			],
+			"name":"cloud-zookeeper-provider"
 		}
 	],
 	"envList":[
@@ -37,7 +46,8 @@
 	"projectList":[
 		"cloud-provider-payment",
 		"cloud-provider-trade",
-		"cloud-consumer-order"
+		"cloud-consumer-order",
+		"cloud-zookeeper-provider"
 	],
 	"syncModel":{
 		"branch":"master",

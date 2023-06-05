@@ -50,7 +50,7 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-zookeeper-discovery</artifactId>
         </dependency>
-        <!-- SpringBoot整合zookeeper客户端 -->
+        <!-- SpringBoot整合zookeeper客户端（解决版本冲突问题） -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-zookeeper-discovery</artifactId>
