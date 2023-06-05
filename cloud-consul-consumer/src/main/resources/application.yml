@@ -1,0 +1,24 @@
+###consul服务端口号
+server:
+  port: 80
+
+spring:
+  application:
+    name: cloud-consul-consumer
+  ####consul注册中心地址
+  cloud:
+    consul:
+      host: 39.101.165.196
+      port: 8500
+      discovery:
+        #hostname: 127.0.0.1
+        #这个是服务注册到consul的实例名称，部署集群的时候会出现相同实例名称会被顶替
+        #service-name: ${spring.application.name}
+        #替换service-name来进行实例名称注入，使用名称加ip来识别唯一性，进行集群部署防止同名顶替
+        instance-id: ${spring.application.name}:${spring.cloud.client.ip-address}:${server.port}
+
+        #这里是将服务运行的ip作为注册ip注册到consul，consul在进行健康检查的时候会使用，替代掉consul.discovery.hostname
+        prefer-ip-address: true
+        # 心跳开启，如果不开启心跳，注册到consul会报错
+        heartbeat:
+          enabled: true

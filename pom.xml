@@ -16,6 +16,8 @@
         <module>cloud-eureka-server2</module>
         <module>cloud-zookeeper-provider</module>
         <module>colud-zookeeper-consumer</module>
+        <module>cloud-consul-provider</module>
+        <module>cloud-consul-consumer</module>
     </modules>
     <packaging>pom</packaging>
 

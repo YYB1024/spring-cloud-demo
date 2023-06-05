@@ -44,6 +44,24 @@
 				}
 			],
 			"name":"colud-zookeeper-consumer"
+		},
+		{
+			"hostGroup":[
+				{
+					"env":"local",
+					"url":"http://localhost:8006"
+				}
+			],
+			"name":"cloud-consul-provider"
+		},
+		{
+			"hostGroup":[
+				{
+					"env":"local",
+					"url":"http://localhost:80"
+				}
+			],
+			"name":"cloud-consul-consumer"
 		}
 	],
 	"envList":[
@@ -57,7 +75,9 @@
 		"cloud-provider-trade",
 		"cloud-consumer-order",
 		"cloud-zookeeper-provider",
-		"colud-zookeeper-consumer"
+		"colud-zookeeper-consumer",
+		"cloud-consul-provider",
+		"cloud-consul-consumer"
 	],
 	"syncModel":{
 		"branch":"master",
