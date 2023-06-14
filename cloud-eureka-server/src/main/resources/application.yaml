@@ -12,9 +12,9 @@ eureka:
     fetch-registry: false
     service-url:
       #单机版就是指向自己-设置与Eureka Server交互的地址查询服务和注册服务都需要依赖这个地址。
-      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+      #defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
       # 集群指向其他eureka
-      #defaultZone: http://eureka7002.com:7002/eureka/
+      defaultZone: http://eureka7002.com:7002/eureka/
   server:
     # 关闭自我保护机制，保证不可用服务被及时删除（默认为TRUE）
     enable-self-preservation: false
