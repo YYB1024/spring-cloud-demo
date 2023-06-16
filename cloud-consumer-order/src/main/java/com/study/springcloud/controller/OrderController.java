@@ -45,7 +45,7 @@ public class OrderController {
     }
 
 
-    @GetMapping("/comsumer/payment/getPaymentById/{id}")
+    @GetMapping("/comsumer/payment/getPaymentById2/{id}")
     public CommonResult<Payment> getPayment2(@PathVariable("id") Long id){
         ResponseEntity<CommonResult> responseEntity = restTemplate.getForEntity(PAYMENT_URL + "/payment/getPaymentById/" + id, CommonResult.class);
         if(responseEntity.getStatusCode().is2xxSuccessful()){

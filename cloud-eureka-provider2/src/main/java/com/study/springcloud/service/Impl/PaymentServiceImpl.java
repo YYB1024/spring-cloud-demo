@@ -1,12 +1,12 @@
 package com.study.springcloud.service.Impl;
 
 
-import com.study.springcloud.dao.PaymentDao;
+
+import com.study.springcloud.dao2.PaymentDao;
 import com.study.springcloud.entities.Payment;
 import com.study.springcloud.service.PaymentService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import javax.annotation.Resource;
 
 /**
  * @author yangyanbin
@@ -14,7 +14,7 @@ import javax.annotation.Resource;
  **/
 @Service
 public class PaymentServiceImpl implements PaymentService {
-    @Resource
+    @Autowired
     private PaymentDao paymentDao;
 
 

@@ -1,4 +1,4 @@
-package com.study.springcloud.dao;
+package com.study.springcloud.dao2;
 
 
 import com.study.springcloud.entities.Payment;

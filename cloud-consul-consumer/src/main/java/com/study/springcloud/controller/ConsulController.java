@@ -1,4 +1,4 @@
-package com.study.consumer;
+package com.study.springcloud.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;

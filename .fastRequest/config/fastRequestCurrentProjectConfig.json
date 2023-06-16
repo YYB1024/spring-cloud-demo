@@ -62,6 +62,24 @@
 				}
 			],
 			"name":"cloud-consul-consumer"
+		},
+		{
+			"hostGroup":[
+				{
+					"env":"local",
+					"url":"http://localhost:8002"
+				}
+			],
+			"name":"cloud-eureka-provider2"
+		},
+		{
+			"hostGroup":[
+				{
+					"env":"local",
+					"url":"http://localhost:8001"
+				}
+			],
+			"name":"cloud-eureka-provider"
 		}
 	],
 	"envList":[
@@ -77,7 +95,9 @@
 		"cloud-zookeeper-provider",
 		"colud-zookeeper-consumer",
 		"cloud-consul-provider",
-		"cloud-consul-consumer"
+		"cloud-consul-consumer",
+		"cloud-eureka-provider2",
+		"cloud-eureka-provider"
 	],
 	"syncModel":{
 		"branch":"master",
