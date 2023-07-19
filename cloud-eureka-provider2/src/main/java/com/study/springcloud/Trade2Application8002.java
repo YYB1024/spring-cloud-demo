@@ -2,7 +2,6 @@ package com.study.springcloud;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 /**
@@ -11,8 +10,8 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
  **/
 @EnableEurekaClient
 @SpringBootApplication
-public class Trade2Application {
+public class Trade2Application8002 {
     public static void main(String[] args) {
-        SpringApplication.run(Trade2Application.class,args);
+        SpringApplication.run(Trade2Application8002.class,args);
     }
 }

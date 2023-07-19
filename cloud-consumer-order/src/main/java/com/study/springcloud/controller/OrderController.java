@@ -1,8 +1,13 @@
 package com.study.springcloud.controller;
 
+import cn.hutool.core.codec.PunyCode;
+import cn.hutool.core.collection.CollectionUtil;
 import com.study.springcloud.entities.CommonResult;
 import com.study.springcloud.entities.Payment;
+import com.study.springcloud.loadbalancer.ILoadBalancer;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.cloud.client.ServiceInstance;
+import org.springframework.cloud.client.discovery.DiscoveryClient;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -10,6 +15,8 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
 import javax.annotation.Resource;
+import java.net.URI;
+import java.util.List;
 
 /**
  * @author yangyanbin
@@ -23,6 +30,11 @@ public class OrderController {
     public static final String PAYMENT_URL="http://CLOUD-PROVIDER-TRADE";
 
 
+    @Resource
+    private ILoadBalancer iLoadBalancer;
+
+    @Resource
+    private DiscoveryClient discoveryClient;
 
     @Resource
     private RestTemplate restTemplate;
@@ -53,6 +65,19 @@ public class OrderController {
         }else {
             return new CommonResult<>(444,"操作失败！");
         }
+    }
+
+
+    @GetMapping("/consumer/payment/lb")
+    public String getPaymentLB(){
+        List<ServiceInstance> instances = discoveryClient.getInstances("CLOUD-PROVIDER-TRADE");
+        if(CollectionUtil.isEmpty(instances)){
+            return null;
+        }
+        ServiceInstance serviceInstance = iLoadBalancer.instances(instances);
+        URI uri = serviceInstance.getUri();
+        return restTemplate.getForObject(uri+"/payment/lb",String.class);
+
     }
 
 

@@ -12,8 +12,8 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 @EnableDiscoveryClient
 @EnableEurekaClient
 @SpringBootApplication
-public class TradeApplication {
+public class TradeApplication8001 {
     public static void main(String[] args) {
-        SpringApplication.run(TradeApplication.class,args);
+        SpringApplication.run(TradeApplication8001.class,args);
     }
 }
