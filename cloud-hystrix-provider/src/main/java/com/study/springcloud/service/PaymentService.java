@@ -20,4 +20,15 @@ public interface PaymentService {
      * @return {@link String}
      */
     String paymentInfoError(Integer id);
+
+
+    //===============服务熔断=================
+
+    /**
+     * 付款断路器
+     *
+     * @param id id
+     * @return {@link String}
+     */
+    String paymentCircuitBreaker(Integer id);
 }
