@@ -21,6 +21,7 @@
         <module>cloud-feign-consumer</module>
         <module>cloud-hystrix-provider</module>
         <module>cloud-hystrix-feign-consumer</module>
+        <module>cloud-hystrix-dashboard-consumer</module>
     </modules>
     <packaging>pom</packaging>
 
