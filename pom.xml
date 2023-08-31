@@ -22,6 +22,7 @@
         <module>cloud-hystrix-provider</module>
         <module>cloud-hystrix-feign-consumer</module>
         <module>cloud-hystrix-dashboard-consumer</module>
+        <module>cloud-gateway-service</module>
     </modules>
     <packaging>pom</packaging>
 

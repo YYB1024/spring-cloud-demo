@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: cloud-provider-trade
+    name: cloud-eureka-provider
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource  #当前数据源操作类型
     driver-class-name: org.gjt.mm.mysql.Driver    #驱动包
