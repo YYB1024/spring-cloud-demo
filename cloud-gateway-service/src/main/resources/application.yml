@@ -25,7 +25,7 @@ spring:
             - After=2023-09-01T17:01:06.083+08:00[Asia/Shanghai]  # 断言，根据某个时间点之后进行路径路由
             #- Cookie=username,yyb       # 断言，应的 Cookie name 值和正则表达式去匹配，如果匹配上就会执行路由，如果没有匹配上则不执行
             #- Header=X-Request-Id, \d+  # 请求头要有X-Request-Id属性并且值为整数的正则表达式
-            - Host=**.yyb.com  #它通过参数中的主机地址作为匹配规则。
+            # - Host=**.yyb.com  #它通过参数中的主机地址作为匹配规则。
 
 
 eureka:
