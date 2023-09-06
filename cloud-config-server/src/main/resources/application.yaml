@@ -8,10 +8,10 @@ spring:
     config:
       server:
         git:
-          uri: git@github.com:zzyybs/springcloud-config.git #GitHub上面的git仓库名字
+          uri: https://github.com/YYB1024/spring-cloud-demo.git #GitHub上面的git仓库名字
           ####搜索目录
           search-paths:
-            - springcloud-config
+            - cloud-config-server
       ####读取分支
       label: master
 
