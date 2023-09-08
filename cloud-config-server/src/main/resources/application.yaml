@@ -13,7 +13,7 @@ spring:
           search-paths:
             - springcloud-config-center
       ####读取分支
-      label: master
+      label: main
 
 #服务注册到eureka地址
 eureka:
