@@ -1,0 +1,8 @@
+{
+  "properties": [
+    {
+      "name": "rabbitmq.host",
+      "type": "java.lang.String",
+      "description": "Description for rabbitmq.host."
+  }
+] }
