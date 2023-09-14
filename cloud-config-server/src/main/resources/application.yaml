@@ -15,12 +15,13 @@ spring:
       ####读取分支
       label: main
 
-#rabbitmq相关配置
-rabbitmq:
-  host: 39.101.165.196
-  port: 5672
-  username: root
-  password: 123456
+    #rabbitmq相关配置
+  rabbitmq:
+    host: 39.101.165.196
+    port: 5672
+    username: admin
+    password: 123456
+
 
 #服务注册到eureka地址
 eureka:

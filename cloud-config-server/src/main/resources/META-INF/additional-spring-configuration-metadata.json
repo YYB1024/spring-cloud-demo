@@ -4,5 +4,10 @@
       "name": "rabbitmq.host",
       "type": "java.lang.String",
       "description": "Description for rabbitmq.host."
-  }
-] }
+    },
+    {
+      "name": "rabbitmq.host",
+      "type": "java.lang.String",
+      "description": "Description for rabbitmq.host."
+    }
+  ] }
