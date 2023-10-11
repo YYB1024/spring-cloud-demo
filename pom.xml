@@ -29,6 +29,7 @@
         <module>cloud-stream-rabbitmq-provider</module>
         <module>cloud-stream-rabbitmq-consumer</module>
         <module>cloud-stream-rabbitmq-consumer2</module>
+        <module>cloudAlibaba-nacos-provider</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -67,7 +68,7 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
-            <!--spring cloud alibaba 2.1.0.RELEASE-->
+            <!--spring cloud alibaba 2.2.1.RELEASE-->
             <dependency>
                 <groupId>com.alibaba.cloud</groupId>
                 <artifactId>spring-cloud-alibaba-dependencies</artifactId>
