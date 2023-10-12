@@ -31,6 +31,7 @@
         <module>cloud-stream-rabbitmq-consumer2</module>
         <module>cloudAlibaba-nacos-provider</module>
         <module>cloudAlibaba-nacos-consumer</module>
+        <module>cloudAlibaba-nacos-config-client</module>
     </modules>
     <packaging>pom</packaging>
 
