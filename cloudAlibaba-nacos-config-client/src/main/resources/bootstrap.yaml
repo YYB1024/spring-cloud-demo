@@ -4,7 +4,7 @@ server:
 
 spring:
   application:
-    name: nacos-config-client
+    name: nacos-config
   cloud:
     nacos:
       discovery:
@@ -12,7 +12,9 @@ spring:
       config:
         server-addr: http://39.101.165.196:8848 #Nacos作为配置中心地址
         file-extension: yaml #指定yaml格式的配置
-
+        namespace: 8987fb64-837e-48c9-97fc-2edc6a70ffeb #命名空间值
+        #group: TEST_GROUP #定义分组
+        group: DEV_GROUP #定义分组
 
 
 
