@@ -32,6 +32,7 @@
         <module>cloudAlibaba-nacos-provider</module>
         <module>cloudAlibaba-nacos-consumer</module>
         <module>cloudAlibaba-nacos-config-client</module>
+        <module>cloudAlibaba-sentinel-service</module>
     </modules>
     <packaging>pom</packaging>
 

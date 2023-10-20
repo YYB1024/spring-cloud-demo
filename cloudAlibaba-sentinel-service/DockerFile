@@ -1,0 +1,13 @@
+#1.定义父镜像(定义当前工程依赖的环境)：
+FROM openjdk:8
+#2.定义作者信息（可以省略不写）：
+MAINTAINER  yyb 2593819926@qq.com
+# 创建一个存放该工程的目录
+RUN mkdir -p /root/docker/project
+#3.将jar包添加到容器（将jar包存入镜像中）：
+ADD target/cloudAlibaba-sentinel-service-1.0-SNAPSHOT.jar /root/docker/project/cloudAlibaba-sentinel-service-1.0-docker.jar
+#4.指定这个容器对外暴露的端口号
+EXPOSE 8401
+#5.定义容器启动执行的命令： 当通过此镜像启动容器的时候，执行的命令
+ENTRYPOINT ["/bin/sh", "-c","java -jar /root/docker/project/cloudAlibaba-sentinel-service-1.0-docker.jar"]
+
